@@ -7,7 +7,7 @@ export default function Home() {
   useEffect(() => {
     initializeAnimations();
   }, []);
-
+  
   return (
     <div className="min-h-screen bg-background text-foreground font-[family-name:var(--font-geist-sans)]">
       {/* Navigation Bar */}
@@ -288,7 +288,7 @@ export default function Home() {
             <div className="project-card border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
               <div className="aspect-video relative">
                 <Image
-                  src="/project-preview.jpg"
+                  src="/Markdown_previewer_img.jpg"
                   alt="Project preview"
                   fill
                   className="object-cover"
@@ -300,7 +300,7 @@ export default function Home() {
                 <div className="flex gap-2">
                   {/* link to Repo */}
                   <a
-                    href="https://github.com/sinakiamehr/markdown-previewer"
+                    href="https://github.com/sinakiamehr/markdown-previewerV1.0.2"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-4 py-2 bg-foreground text-background rounded-md hover:bg-opacity-90 transition-colors"
@@ -309,7 +309,7 @@ export default function Home() {
                   </a>
                   {/* link to deployement */}
                   <a
-                    href="https://project-demo.com"
+                    href="https://markdown-previewer-v1-0-2.vercel.app"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-4 py-2 border border-current rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
