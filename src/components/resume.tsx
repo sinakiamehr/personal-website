@@ -71,7 +71,7 @@ const Resume: React.FC = () => {
                       <span className="text-sm">2016 – 2018</span>
                     </p>
                     <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2">
-                      <li>Participated in a cross-disciplinary study exploring the microbiome's influence on alcohol consumption using in vivo mouse models.</li>
+                      <li>Participated in a cross-disciplinary study exploring the microbiome&apos;s influence on alcohol consumption using in vivo mouse models.</li>
                       <li>Designed and maintained experiments, recorded weekly data on over 100 mice including vitals, consumption, and behavior.</li>
                       <li>Conducted dissections and performed immunohistochemistry (IHC) on tissues.</li>
                       <li>Quantified data using ImageJ, GraphPad, and Adobe tools, and delivered findings in symposium presentations and internal meetings.</li>
@@ -124,7 +124,7 @@ const Resume: React.FC = () => {
                   <h2 className="text-2xl font-bold mb-4">Publications</h2>
                   <ul className="list-disc list-inside text-gray-600 dark:text-gray-300 space-y-2">
                     <li>Minwoo Bae et al. (Co-author). Metatranscriptomics-guided discovery and characterization of a polyphenol-metabolizing gut microbial enzyme. 2024.</li>
-                    <li>Sina Kiamehr. Characterization of Microbial Hydrocaffeic Acid Dehydroxylase from Gordonibacter pamelaeae. Bachelor's Thesis, Harvard College. 2022.</li>
+                    <li>Sina Kiamehr. Characterization of Microbial Hydrocaffeic Acid Dehydroxylase from Gordonibacter pamelaeae. Bachelor&apos;s Thesis, Harvard College. 2022.</li>
                     <li>Chip Le et al. (Co-author). Emerging Chemical Diversity and Potential Applications of Enzymes in the DMSO Reductase Superfamily. 2022.</li>
                     <li>Sina Kiamehr. Exploring Catechol Dehydroxylation in Microbes by Characterizing Hydrocaffeic Acid Dehydroxylase from Gordonibacter pamelaeae. 2022.</li>
                     <li>Vayu Maini Rekdal et al. (Co-author). A widely distributed metalloenzyme class enables gut microbial metabolism of host- and diet-derived catechols. eLife Sciences, 2019.</li>
