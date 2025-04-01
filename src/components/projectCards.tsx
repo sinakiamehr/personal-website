@@ -88,7 +88,8 @@ const ProjectCards: React.FC = () => {
               </div>
               <div className="p-4">
                 <h3 className="text-xl font-semibold mb-2">Drum Machine</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">Drum Machine application, designed to behave as a real life Drum Machine. User can click on any displayed key or press the appropriate key on the keyboard in order to produce a sound.</p>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">Drum Machine application, designed to behave as a real life Drum Machine.
+                   User can click on any displayed key or press the appropriate key on the keyboard in order to produce a sound.</p>
                 <div className="flex gap-2">
                   {/* link to Repo */}
                   <a
@@ -123,7 +124,10 @@ const ProjectCards: React.FC = () => {
               </div>
               <div className="p-4">
                 <h3 className="text-xl font-semibold mb-2">U.S.A.  Education Choropleth</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">Choropleth application, features an interactive choropleth map that visualizes the percentage of U.S. adults with a bachelor's degree or higher, categorized by county. Utilizing color variations, the map effectively represents educational attainment levels across different regions, providing a clear and insightful geographic distribution of higher education in the United States.</p>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">Choropleth application, features an interactive choropleth map that visualizes the percentage
+                   of U.S. adults with a bachelor&apos;s degree or higher, categorized by county. Utilizing color variations,
+                    the map effectively represents educational attainment levels across different regions, providing a clear and insightful geographic
+                     distribution of higher education in the United States.</p>
                 <div className="flex gap-2">
                   {/* link to Repo */}
                   <a
@@ -158,7 +162,9 @@ const ProjectCards: React.FC = () => {
               </div>
               <div className="p-4">
                 <h3 className="text-xl font-semibold mb-2">Treemap VideoGame Sales</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">Treemap application, features an interactive treemap diagram visualizing the top 100 best-selling video games, grouped by their respective gaming platforms. This visualization provides insights into the distribution of popular video game titles across various platforms, aiding in the analysis of sales trends within the gaming industry.​</p>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">Treemap application, features an interactive treemap diagram visualizing the top 100
+                   best-selling video games, grouped by their respective gaming platforms. This visualization provides insights into the distribution of popular
+                    video game titles across various platforms, aiding in the analysis of sales trends within the gaming industry.​</p>
                 <div className="flex gap-2">
                   {/* link to Repo */}
                   <a
@@ -193,7 +199,9 @@ const ProjectCards: React.FC = () => {
               </div>
               <div className="p-4">
                 <h3 className="text-xl font-semibold mb-2">Global Temperature Heatmap</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">Heatmap application, displays an interactive heat map chart visualizing global temperature variations from 1753 to 2015. It uses color gradients to represent temperature differences over time, offering a compelling way to explore climate change trends and long-term shifts in global temperatures.​</p>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">Heatmap application, displays an interactive heat map chart visualizing global temperature
+                   variations from 1753 to 2015. It uses color gradients to represent temperature differences over time, offering a compelling way to explore climate
+                    change trends and long-term shifts in global temperatures.​</p>
                 <div className="flex gap-2">
                   {/* link to Repo */}
                   <a
@@ -228,7 +236,9 @@ const ProjectCards: React.FC = () => {
               </div>
               <div className="p-4">
                 <h3 className="text-xl font-semibold mb-2">Cycling Scatterplot</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">Scatterplot application, features an interactive scatter plot graph that visualizes the 35 fastest times up Alpe d'Huez in professional bicycle racing. It highlights instances of doping among cyclists, offering insights into performance trends and the impact of doping in the sport.​</p>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">Scatterplot application, features an interactive scatter plot graph that visualizes
+                   the 35 fastest times up Alpe d&apos;Huez in professional bicycle racing. It highlights instances of doping among cyclists, offering insights into
+                    performance trends and the impact of doping in the sport.​</p>
                 <div className="flex gap-2">
                   {/* link to Repo */}
                   <a
@@ -263,7 +273,9 @@ const ProjectCards: React.FC = () => {
               </div>
               <div className="p-4">
                 <h3 className="text-xl font-semibold mb-2">U.S. GDP Bar Chart</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">Bar Chart application, features an interactive bar chart visualizing the United States' Gross Domestic Product (GDP) over time. Built using D3.js, the chart allows users to hover over individual bars to view specific quarterly GDP data, providing a clear and detailed representation of the nation's economic growth.​</p>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">Bar Chart application, features an interactive bar chart visualizing the United States&apos; 
+                  Gross Domestic Product (GDP) over time. Built using D3.js, the chart allows users to hover over individual bars to view specific quarterly GDP data, 
+                  providing a clear and detailed representation of the nation&apos;s economic growth.​</p>
                 <div className="flex gap-2">
                   {/* link to Repo */}
                   <a
