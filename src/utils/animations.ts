@@ -40,7 +40,7 @@ export const initializeAnimations = () => {
     '.publications-section'
   ];
 
-  resumeSections.forEach((section, _index) => {
+  resumeSections.forEach((section) => {
     gsap.from(section, {
       opacity: 0,
       y: 30,
