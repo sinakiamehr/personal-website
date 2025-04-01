@@ -80,7 +80,7 @@ const ProjectCards: React.FC = () => {
             <div className="project-card border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
               <div className="aspect-video relative">
                 <Image
-                  src="/drumMachine_img.jpg"
+                  src="/drumMachine_img.JPG"
                   alt="Project preview"
                   fill
                   className="object-cover max-w-full h-auto object-contain"
@@ -116,7 +116,7 @@ const ProjectCards: React.FC = () => {
             <div className="project-card border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
               <div className="aspect-video relative">
                 <Image
-                  src="/choropleth_img.jpg"
+                  src="/choropleth_img.JPG"
                   alt="Project preview"
                   fill
                   className="object-cover max-w-full h-auto object-contain"
@@ -154,7 +154,7 @@ const ProjectCards: React.FC = () => {
             <div className="project-card border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
               <div className="aspect-video relative">
                 <Image
-                  src="/treemap_img.jpg"
+                  src="/treemap_img.JPG"
                   alt="Project preview"
                   fill
                   className="object-cover max-w-full h-auto object-contain"
@@ -191,7 +191,7 @@ const ProjectCards: React.FC = () => {
             <div className="project-card border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
               <div className="aspect-video relative">
                 <Image
-                  src="/heatmap_img.jpg"
+                  src="/heatmap_img.JPG"
                   alt="Project preview"
                   fill
                   className="object-cover max-w-full h-auto object-contain"
@@ -228,7 +228,7 @@ const ProjectCards: React.FC = () => {
             <div className="project-card border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
               <div className="aspect-video relative">
                 <Image
-                  src="/scatterplot_img.jpg"
+                  src="/scatterplot_img.JPG"
                   alt="Project preview"
                   fill
                   className="object-cover max-w-full h-auto object-contain"
@@ -265,7 +265,7 @@ const ProjectCards: React.FC = () => {
             <div className="project-card border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
               <div className="aspect-video relative">
                 <Image
-                  src="/gdp_img.jpg"
+                  src="/gdp_img.JPG"
                   alt="Project preview"
                   fill
                   className="object-cover max-w-full h-auto object-contain"
@@ -302,7 +302,7 @@ const ProjectCards: React.FC = () => {
             <div className="project-card border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
               <div className="aspect-video relative">
                 <Image
-                  src="/timer_img.jpg"
+                  src="/timer_img.JPG"
                   alt="Project preview"
                   fill
                   className="object-cover max-w-full h-auto object-contain"
