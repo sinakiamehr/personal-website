@@ -33,7 +33,7 @@ const ProfileSection: React.FC = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
                 {/* personal website link */}
-                <a href="/Sina Resume Tech 3.26.25.pdf" download className="hover:underline">Sina&apos;s Resume</a>
+                <a href="/Sina Resume Tech 4.2.25.pdf" download className="hover:underline">Sina&apos;s Resume</a>
               </p>
             </div>
           </div>
