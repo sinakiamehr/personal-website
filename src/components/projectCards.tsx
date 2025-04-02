@@ -186,43 +186,7 @@ const ProjectCards: React.FC = () => {
             </div>
             
             
-          {/* Additional Project Section */}
-          <div className="project-card border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-            <div className="aspect-video relative w-full h-[200px] sm:h-[300px]">
-              <Image
-                src="/new_project_img.JPG"
-                alt="New Project preview"
-                fill
-                className="object-contain"
-              />
-            </div>
-            <div className="p-4">
-              <h3 className="text-xl font-semibold mb-2">New Project Title</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Brief description of the new project. Highlight its features, purpose, and any technologies used.
-              </p>
-              <div className="flex gap-2">
-                {/* link to Repo */}
-                <a
-                  href="https://github.com/yourusername/new-project-repo"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-4 py-2 bg-foreground text-background rounded-md hover:bg-opacity-90 transition-colors"
-                >
-                  View Code
-                </a>
-                {/* link to deployment */}
-                <a
-                  href="https://new-project-demo.vercel.app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-4 py-2 border border-current rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-                >
-                  Live Demo
-                </a>
-              </div>
-            </div>
-          </div>
+           
             {/* adding collapsable element */}
             <button
             onClick={toggleProjects}
