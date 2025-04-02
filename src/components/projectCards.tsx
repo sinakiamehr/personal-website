@@ -31,19 +31,18 @@ const ProjectCards: React.FC = () => {
 
 
   return (
-        <section id="projects">
+        <section id="projects" className="w-full px-4 sm:px-0">
           <h2 className="text-2xl font-bold mb-6 pt-16 -mt-16">Featured Projects</h2>
-          <div className="projects-grid grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="projects-grid grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
             {/* Projects Section */}
             <div className="project-card border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="aspect-video relative">
+              <div className="aspect-video relative w-full h-[200px] sm:h-[300px]">
                 <Image
                   src="/choropleth_img.JPG"
                   alt="Project preview"
                   fill
-                  className="object-cover max-w-full h-auto object-contain"
+                  className="object-contain"
                 />
-                
               </div>
               <div className="p-4">
                 <h3 className="text-xl font-semibold mb-2">U.S.A.  Education Choropleth</h3>
@@ -75,12 +74,12 @@ const ProjectCards: React.FC = () => {
             </div>
             {/* Projects Section */}
             <div className="project-card border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="aspect-video relative">
+              <div className="aspect-video relative w-full h-[200px] sm:h-[300px]">
                 <Image
                   src="/treemap_img.JPG"
                   alt="Project preview"
                   fill
-                  className="object-cover max-w-full h-auto object-contain"
+                  className="object-contain"
                 />
               </div>
               <div className="p-4">
@@ -112,12 +111,12 @@ const ProjectCards: React.FC = () => {
             </div>
             {/* Projects Section */}
             <div className="project-card border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="aspect-video relative">
+              <div className="aspect-video relative w-full h-[200px] sm:h-[300px]">
                 <Image
                   src="/timer_img.JPG"
                   alt="Project preview"
                   fill
-                  className="object-cover max-w-full h-auto object-contain"
+                  className="object-contain"
                 />
               </div>
               <div className="p-4">
@@ -152,12 +151,12 @@ const ProjectCards: React.FC = () => {
             
             {/* Projects Section */}
             <div className="project-card border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="aspect-video relative">
+              <div className="aspect-video relative w-full h-[200px] sm:h-[300px]">
                 <Image
                   src="/calculator_img.jpg"
                   alt="Project preview"
                   fill
-                  className="object-cover max-w-full h-auto object-contain"
+                  className="object-contain"
                 />
               </div>
               <div className="p-4">
@@ -191,12 +190,12 @@ const ProjectCards: React.FC = () => {
             {/* adding collapsable element */}
             <button
             onClick={toggleProjects}
-            className="col-span-2 text-xl font-semibold mb-6 p-4 border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden hover:shadow-lg transition-shadow"
+            className="col-span-full text-xl font-semibold mb-6 p-4 border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden hover:shadow-lg transition-shadow"
           >
             {isProjectsVisible ? 'Hide Projects' : 'Show More Projects'}
           </button>
           </div>
-          <div ref={projectCardsRef} style={{ height: 0, overflow: 'hidden' }} className="projects-grid grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div ref={projectCardsRef} style={{ height: 0, overflow: 'hidden' }} className="projects-grid grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
             
             {/* Projects Section */}
             <div className="project-card border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
@@ -465,4 +464,4 @@ export default ProjectCards;
           //       </div>
           //     )}
           //   </div>
-          // </div> 
+          // </div>
