@@ -12,9 +12,13 @@ import Resume from "@/components/resume";
 import ProjectCards from "@/components/projectCards";
 
 export default function Home() {
+  
+  
   useEffect(() => {
     initializeAnimations();
   }, []);
+
+  
   
   return (
     <div className="min-h-screen bg-background text-foreground font-[family-name:var(--font-geist-sans)]">
@@ -33,14 +37,16 @@ export default function Home() {
         {/* Summary Section */}
         <Summary />
 
+        {/* Projects Section */}          
+        <ProjectCards />
+
         {/* Technical Skills Section */}
         <TechnicalSkills />
         
         {/* Resume Section */}
         <Resume />
 
-        {/* Projects Section */}
-        <ProjectCards />
+        
         
       </main>
     </div>

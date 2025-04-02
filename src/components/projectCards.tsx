@@ -1,117 +1,31 @@
 import React from "react";
 import Image from "next/image";
+import { useState, useRef } from "react";
+import { gsap } from "gsap";
 
 const ProjectCards: React.FC = () => {
-    return (
+  const [isProjectsVisible, setIsProjectsVisible] = useState(false);
+  const projectCardsRef = useRef<HTMLDivElement>(null);
+  
+  
+  const toggleProjects = () => {
+    if (projectCardsRef.current) {
+      if (isProjectsVisible) {
+        // Collapse animation
+        gsap.to(projectCardsRef.current, { height: 0, duration: 0.5, overflow: 'hidden' });
+      } else {
+        // Expand animation
+        gsap.to(projectCardsRef.current, { height: 'auto', duration: 0.5, overflow: 'visible' });
+      }
+    }
+    setIsProjectsVisible(!isProjectsVisible);
+  };  
+
+
+  return (
         <section id="projects">
           <h2 className="text-2xl font-bold mb-6 pt-16 -mt-16">Featured Projects</h2>
           <div className="projects-grid grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Project Card */}
-            <div className="project-card border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="aspect-video relative">
-                <Image
-                  src="/Markdown_previewer_img.jpg"
-                  alt="Project preview"
-                  fill
-                  className="object-cover max-w-full h-auto object-contain"
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-semibold mb-2">Mardown Previewer</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">Markdown Previewer application, designed to convert Markdown syntax into real-time HTML output. This tool allows users to input Markdown text and immediately view the rendered HTML, facilitating the writing and editing process for Markdown documents.</p>
-                <div className="flex gap-2">
-                  {/* link to Repo */}
-                  <a
-                    href="https://github.com/sinakiamehr/markdown-previewerV1.0.2"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-4 py-2 bg-foreground text-background rounded-md hover:bg-opacity-90 transition-colors"
-                  >
-                    View Code
-                  </a>
-                  {/* link to deployement */}
-                  <a
-                    href="https://markdown-previewer-v1-0-2.vercel.app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-4 py-2 border border-current rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-                  >
-                    Live Demo
-                  </a>
-                </div>
-              </div>
-            </div>
-            {/* Projects Section */}
-            <div className="project-card border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="aspect-video relative">
-                <Image
-                  src="/calculator_img.jpg"
-                  alt="Project preview"
-                  fill
-                  className="object-cover max-w-full h-auto object-contain"
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-semibold mb-2">Calculator</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">Calculator application, designed to emulate a real life Calculator. User can perform basic arithmetic operations such as addition, subtraction, multiplication, and division. The Application supports whole numbers as well as decimal numbers</p>
-                <div className="flex gap-2">
-                  {/* link to Repo */}
-                  <a
-                    href="https://github.com/sinakiamehr/calculator"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-4 py-2 bg-foreground text-background rounded-md hover:bg-opacity-90 transition-colors"
-                  >
-                    View Code
-                  </a>
-                  {/* link to deployement */}
-                  <a
-                    href="https://calculator-pi-one-92.vercel.app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-4 py-2 border border-current rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-                  >
-                    Live Demo
-                  </a>
-                </div>
-              </div>
-            </div>
-            {/* Projects Section */}
-            <div className="project-card border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="aspect-video relative">
-                <Image
-                  src="/drumMachine_img.JPG"
-                  alt="Project preview"
-                  fill
-                  className="object-cover max-w-full h-auto object-contain"
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-semibold mb-2">Drum Machine</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">Drum Machine application, designed to behave as a real life Drum Machine.
-                   User can click on any displayed key or press the appropriate key on the keyboard in order to produce a sound.</p>
-                <div className="flex gap-2">
-                  {/* link to Repo */}
-                  <a
-                    href="https://github.com/sinakiamehr/Drum-Machine"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-4 py-2 bg-foreground text-background rounded-md hover:bg-opacity-90 transition-colors"
-                  >
-                    View Code
-                  </a>
-                  {/* link to deployement */}
-                  <a
-                    href="https://drum-machine-livid-five.vercel.app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-4 py-2 border border-current rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-                  >
-                    Live Demo
-                  </a>
-                </div>
-              </div>
-            </div>
             {/* Projects Section */}
             <div className="project-card border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
               <div className="aspect-video relative">
@@ -187,6 +101,94 @@ const ProjectCards: React.FC = () => {
                 </div>
               </div>
             </div>
+            {/* Projects Section */}
+            <div className="project-card border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="aspect-video relative">
+                <Image
+                  src="/timer_img.JPG"
+                  alt="Project preview"
+                  fill
+                  className="object-cover max-w-full h-auto object-contain"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-xl font-semibold mb-2">Timer Clock</h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  Timer application, features an interactive clock that counts up to a set time. Built using React, 
+                  the clock allows users to set a specific time and displays the current time in real-time.​The break time 
+                  features also allows user to set session/rest cycling to emulate a pomodoro timer.
+                  </p>
+                <div className="flex gap-2">
+                  {/* link to Repo */}
+                  <a
+                    href="https://github.com/sinakiamehr/timer-clock"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 bg-foreground text-background rounded-md hover:bg-opacity-90 transition-colors"
+                  >
+                    View Code
+                  </a>
+                  {/* link to deployement */}
+                  <a
+                    href="https://timer-clock-delta.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 border border-current rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                  >
+                    Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            {/* Projects Section */}
+            <div className="project-card border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="aspect-video relative">
+                <Image
+                  src="/calculator_img.jpg"
+                  alt="Project preview"
+                  fill
+                  className="object-cover max-w-full h-auto object-contain"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-xl font-semibold mb-2">Calculator</h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">Calculator application, designed to emulate a real life Calculator. User can perform basic arithmetic operations such as addition, subtraction, multiplication, and division. The Application supports whole numbers as well as decimal numbers</p>
+                <div className="flex gap-2">
+                  {/* link to Repo */}
+                  <a
+                    href="https://github.com/sinakiamehr/calculator"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 bg-foreground text-background rounded-md hover:bg-opacity-90 transition-colors"
+                  >
+                    View Code
+                  </a>
+                  {/* link to deployement */}
+                  <a
+                    href="https://calculator-pi-one-92.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 border border-current rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                  >
+                    Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            
+           
+            {/* adding collapsable element */}
+            <button
+            onClick={toggleProjects}
+            className="col-span-2 text-xl font-semibold mb-6 p-4 border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden hover:shadow-lg transition-shadow"
+          >
+            {isProjectsVisible ? 'Hide Projects' : 'Show More Projects'}
+          </button>
+          </div>
+          <div ref={projectCardsRef} style={{ height: 0, overflow: 'hidden' }} className="projects-grid grid grid-cols-1 md:grid-cols-2 gap-6">
+            
             {/* Projects Section */}
             <div className="project-card border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
               <div className="aspect-video relative">
@@ -298,27 +300,23 @@ const ProjectCards: React.FC = () => {
                 </div>
               </div>
             </div>
-            {/* Projects Section */}
+            {/* Project Card */}
             <div className="project-card border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
               <div className="aspect-video relative">
                 <Image
-                  src="/timer_img.JPG"
+                  src="/Markdown_previewer_img.jpg"
                   alt="Project preview"
                   fill
                   className="object-cover max-w-full h-auto object-contain"
                 />
               </div>
               <div className="p-4">
-                <h3 className="text-xl font-semibold mb-2">Timer Clock</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">
-                  Timer application, features an interactive clock that counts up to a set time. Built using React, 
-                  the clock allows users to set a specific time and displays the current time in real-time.​The break time 
-                  features also allows user to set session/rest cycling to emulate a pomodoro timer.
-                  </p>
+                <h3 className="text-xl font-semibold mb-2">Markdown Previewer</h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">Markdown Previewer application, designed to convert Markdown syntax into real-time HTML output. This tool allows users to input Markdown text and immediately view the rendered HTML, facilitating the writing and editing process for Markdown documents.</p>
                 <div className="flex gap-2">
                   {/* link to Repo */}
                   <a
-                    href="https://github.com/sinakiamehr/timer-clock"
+                    href="https://github.com/sinakiamehr/markdown-previewerV1.0.2"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-4 py-2 bg-foreground text-background rounded-md hover:bg-opacity-90 transition-colors"
@@ -327,7 +325,7 @@ const ProjectCards: React.FC = () => {
                   </a>
                   {/* link to deployement */}
                   <a
-                    href="https://timer-clock-delta.vercel.app"
+                    href="https://markdown-previewer-v1-0-2.vercel.app"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-4 py-2 border border-current rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
@@ -337,7 +335,46 @@ const ProjectCards: React.FC = () => {
                 </div>
               </div>
             </div>
+
+            {/* Projects Section */}
+            <div className="project-card border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="aspect-video relative">
+                <Image
+                  src="/drumMachine_img.JPG"
+                  alt="Project preview"
+                  fill
+                  className="object-cover max-w-full h-auto object-contain"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-xl font-semibold mb-2">Drum Machine</h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">Drum Machine application, designed to behave as a real life Drum Machine.
+                   User can click on any displayed key or press the appropriate key on the keyboard in order to produce a sound.</p>
+                <div className="flex gap-2">
+                  {/* link to Repo */}
+                  <a
+                    href="https://github.com/sinakiamehr/Drum-Machine"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 bg-foreground text-background rounded-md hover:bg-opacity-90 transition-colors"
+                  >
+                    View Code
+                  </a>
+                  {/* link to deployement */}
+                  <a
+                    href="https://drum-machine-livid-five.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 border border-current rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                  >
+                    Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+            
           </div>
+      
         </section>
     );
 
