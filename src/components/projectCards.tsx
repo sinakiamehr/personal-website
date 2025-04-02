@@ -21,6 +21,14 @@ const ProjectCards: React.FC = () => {
     setIsProjectsVisible(!isProjectsVisible);
   };  
 
+// // State to track which website previews have failed to load
+// const [previewErrors, setPreviewErrors] = useState<{[key: string]: boolean}>({}); 
+
+// // Handler for iframe loading errors
+// const handleIframeError = (link: string) => {
+//   setPreviewErrors(prev => ({ ...prev, [link]: true }));
+// };
+
 
   return (
         <section id="projects">
@@ -35,6 +43,7 @@ const ProjectCards: React.FC = () => {
                   fill
                   className="object-cover max-w-full h-auto object-contain"
                 />
+                
               </div>
               <div className="p-4">
                 <h3 className="text-xl font-semibold mb-2">U.S.A.  Education Choropleth</h3>
@@ -381,3 +390,79 @@ const ProjectCards: React.FC = () => {
 };
 
 export default ProjectCards;
+
+
+
+
+
+// {projects.map((project) => (
+//   <div key={project.id} className="border rounded-lg overflow-hidden shadow-lg bg-white dark:bg-gray-800">
+//     {/* Website link header section */}
+//     <div className="p-4 border-b dark:border-gray-700">
+//       <a
+//         href={project.link}
+//         target="_blank"
+//         rel="noopener noreferrer"
+//         className="text-blue-600 dark:text-blue-400 hover:underline break-all"
+//       >
+//         {project.link}
+//       </a>
+//     </div>
+//     {/* Preview container with fixed height */}
+//     <div className="relative w-full h-[400px]">
+//       {/* Conditional rendering: Show iframe if no error, fallback message if error */}
+//       {!previewErrors[project.link] ? (
+//         <iframe
+//           src={project.link}
+//           className="w-full h-full"
+//           onError={() => handleIframeError(project.link)}
+//           sandbox="allow-scripts allow-same-origin"
+//         />
+//       ) : (
+//         <div className="w-full h-full flex items-center justify-center">
+//           <p className="text-gray-600 dark:text-gray-300">Error loading preview</p>
+//         </div>
+//       )}
+//     </div>
+//     {/* Project description section */}
+//     <div className="p-4">
+//       <p className="text-gray-600 dark:text-gray-300">{project.description}</p>
+//     </div>
+//   </div>
+// );
+// )
+// ))}
+{/* <div key="1" className="border rounded-lg overflow-hidden shadow-lg bg-white dark:bg-gray-800">
+            {/* Website link header section */}
+          //   <div className="p-4 border-b dark:border-gray-700">
+          //     <a
+          //       href="https://choropleth-us-education-map.vercel.app"
+          //       target="_blank"
+          //       rel="noopener noreferrer"
+          //       className="text-blue-600 dark:text-blue-400 hover:underline break-all"
+          //     >
+          //       "https://choropleth-us-education-map.vercel.app"
+          //     </a>
+          //   </div>
+          //   {/* Preview container with fixed height */}
+          //   <div className="relative w-full h-[400px]">
+          //     {/* Conditional rendering: Show iframe if no error, fallback message if error */}
+          //     {!previewErrors["https://choropleth-us-education-map.vercel.app"] ? (
+          //       <iframe
+          //         src={"https://choropleth-us-education-map.vercel.app"}
+          //         className="w-full h-full"
+          //         onError={() => handleIframeError("https://choropleth-us-education-map.vercel.app")}
+          //         sandbox="allow-scripts allow-same-origin"
+          //       />
+          //     ) : (
+          //       // Error fallback message
+          //       <div className="w-full h-full flex items-center justify-center p-4 bg-gray-100 dark:bg-gray-900">
+          //         <p className="text-gray-500 dark:text-gray-400 text-center">
+          //           Preview unavailable due to website restrictions.
+          //           <br />
+          //           Please visit the website directly.
+          //         </p>
+          //       </div>
+          //     )}
+          //   </div>
+          // </div> 
