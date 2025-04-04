@@ -380,6 +380,48 @@ const ProjectCards: React.FC = () => {
                 </div>
               </div>
             </div>
+
+
+            {/* Projects Section */}
+            <div className="project-card border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="aspect-video relative">
+                <Image
+                  src="/mediaPlayer_img.JPG"
+                  alt="Project preview"
+                  fill
+                  className="object-cover max-w-full h-auto object-contain"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-xl font-semibold mb-2">Media Player</h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  ​The Linear Media Player is a web-based application designed for seamless playback of
+                  audio and video content. It offers an intuitive interface that allows users to easily manage and enjoy
+                  their media collections directly from their browser.
+
+                </p>
+                <div className="flex gap-2">
+                  {/* link to Repo */}
+                  <a
+                    href="https://github.com/sinakiamehr/media-player"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 bg-foreground text-background rounded-md hover:bg-opacity-90 transition-colors"
+                  >
+                    View Code
+                  </a>
+                  {/* link to deployement */}
+                  <a
+                    href="https://media-player-psi-vert.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 border border-current rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                  >
+                    Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
             
           </div>
       
