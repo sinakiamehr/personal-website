@@ -9,22 +9,22 @@ const NavBar: React.FC = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 backdrop-blur-md bg-background/80 border-b border-gray-200 dark:border-gray-700">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+    <nav className="sticky top-0 z-50 glass border-b border-[var(--border)]">
+      <div className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
+        <div className="flex items-center justify-between h-20">
           {/* Logo/Name */}
           <div className="flex-shrink-0">
-            <span className="text-xl font-bold">SK</span>
+            <span className="text-2xl font-bold text-[var(--foreground)] tracking-tight">SK</span>
           </div>
           
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-center space-x-4">
-              <a href="#summary" className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium">Summary</a>
-              <a href="#projects" className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</a>
-              <a href="#skills" className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium">Skills</a>
-              <a href="#education" className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium">Education</a>
-              <a href="#experience" className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium">Experience</a>
+            <div className="flex items-center space-x-2">
+              <a href="#summary" className="nav-link text-[var(--secondary)] hover:text-[var(--foreground)] px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 hover:bg-[var(--card-bg)] hover:shadow-[var(--shadow-light)] hover:scale-105 active:scale-95">Summary</a>
+              <a href="#projects" className="nav-link text-[var(--secondary)] hover:text-[var(--foreground)] px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 hover:bg-[var(--card-bg)] hover:shadow-[var(--shadow-light)] hover:scale-105 active:scale-95">Projects</a>
+              <a href="#skills" className="nav-link text-[var(--secondary)] hover:text-[var(--foreground)] px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 hover:bg-[var(--card-bg)] hover:shadow-[var(--shadow-light)] hover:scale-105 active:scale-95">Skills</a>
+              <a href="#education" className="nav-link text-[var(--secondary)] hover:text-[var(--foreground)] px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 hover:bg-[var(--card-bg)] hover:shadow-[var(--shadow-light)] hover:scale-105 active:scale-95">Education</a>
+              <a href="#experience" className="nav-link text-[var(--secondary)] hover:text-[var(--foreground)] px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 hover:bg-[var(--card-bg)] hover:shadow-[var(--shadow-light)] hover:scale-105 active:scale-95">Experience</a>
             </div>
           </div>
           
@@ -32,7 +32,9 @@ const NavBar: React.FC = () => {
           <div className="md:hidden">
             <button
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white focus:outline-none"
+              className="inline-flex items-center justify-center p-3 rounded-full text-[var(--secondary)] hover:text-[var(--foreground)] hover:bg-[var(--card-bg)] focus:outline-none transition-all duration-200"
+              title="Toggle navigation menu"
+              aria-label="Toggle navigation menu"
               onClick={() => {
                 const mobileMenu = document.getElementById('mobile-menu');
                 if (mobileMenu) {
@@ -49,38 +51,38 @@ const NavBar: React.FC = () => {
         
         {/* Mobile Navigation Menu */}
         <div className="hidden md:hidden" id="mobile-menu">
-          <div className="px-2 pt-2 pb-3 space-y-1">
+          <div className="px-4 pt-4 pb-6 space-y-3 bg-[var(--card-bg)] border-t border-[var(--border)] rounded-b-2xl mx-4 mt-4 shadow-[var(--shadow-medium)] backdrop-filter backdrop-blur-sm">
             <a
               href="#summary"
-              className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              className="nav-link-mobile text-[var(--secondary)] hover:text-[var(--foreground)] block px-5 py-3.5 rounded-xl text-base font-medium hover:bg-[var(--background)] hover:shadow-[var(--shadow-light)] transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
               onClick={handleMobileLinkClick}
             >
               Summary
             </a>
             <a
               href="#projects"
-              className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              className="nav-link-mobile text-[var(--secondary)] hover:text-[var(--foreground)] block px-5 py-3.5 rounded-xl text-base font-medium hover:bg-[var(--background)] hover:shadow-[var(--shadow-light)] transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
               onClick={handleMobileLinkClick}
             >
               Projects
             </a>
             <a
               href="#skills"
-              className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              className="nav-link-mobile text-[var(--secondary)] hover:text-[var(--foreground)] block px-5 py-3.5 rounded-xl text-base font-medium hover:bg-[var(--background)] hover:shadow-[var(--shadow-light)] transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
               onClick={handleMobileLinkClick}
             >
               Skills
             </a>
             <a
               href="#education"
-              className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              className="nav-link-mobile text-[var(--secondary)] hover:text-[var(--foreground)] block px-5 py-3.5 rounded-xl text-base font-medium hover:bg-[var(--background)] hover:shadow-[var(--shadow-light)] transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
               onClick={handleMobileLinkClick}
             >
               Education
             </a>
             <a
               href="#experience"
-              className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              className="nav-link-mobile text-[var(--secondary)] hover:text-[var(--foreground)] block px-5 py-3.5 rounded-xl text-base font-medium hover:bg-[var(--background)] hover:shadow-[var(--shadow-light)] transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
               onClick={handleMobileLinkClick}
             >
               Experience

@@ -26,25 +26,30 @@ export default function Home() {
       {/* Navigation Bar */}
       <NavBar />
       
-      <main className="max-w-4xl mx-auto space-y-12 p-8 pt-4">
+      <main className="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
         
-        {/* Profile Section */}
-        <ProfileSection />
+        {/* Hero Section */}
+        <section className="py-20 sm:py-32">
+          <ProfileSection />
+          <div className="mt-12">
+            <SocialLinks />
+          </div>
+        </section>
 
-        {/* Social Links */}
-        <SocialLinks />
+        {/* Content Sections */}
+        <div className="space-y-24 pb-24">
+          {/* Summary Section */}
+          <Summary />
 
-        {/* Summary Section */}
-        <Summary />
+          {/* Projects Section */}          
+          <ProjectCards />
 
-        {/* Projects Section */}          
-        <ProjectCards />
-
-        {/* Technical Skills Section */}
-        <TechnicalSkills />
-        
-        {/* Resume Section */}
-        <Resume />
+          {/* Technical Skills Section */}
+          <TechnicalSkills />
+          
+          {/* Resume Section */}
+          <Resume />
+        </div>
 
         
         

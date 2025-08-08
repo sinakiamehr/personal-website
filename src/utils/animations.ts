@@ -4,30 +4,38 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 export const initializeAnimations = () => {
-  // Profile section animation
-  gsap.from('.profile-section', {
-    opacity: 0,
-    y: 50,
-    duration: 1,
-    scrollTrigger: {
-      trigger: '.profile-section',
-      start: 'top 80%',
-      toggleActions: 'play none none reverse'
+  // Profile section animation - immediate visibility
+  gsap.fromTo('.profile-section', 
+    {
+      opacity: 0,
+      y: 50
+    },
+    {
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      delay: 0.2,
+      ease: 'power2.out'
     }
-  });
+  );
 
-  // Social links animation
-  gsap.from('.social-links a', {
-    opacity: 0,
-    y: 20,
-    duration: 0.5,
-    stagger: 0.1,
-    scrollTrigger: {
-      trigger: '.social-links',
-      start: 'top 85%',
-      toggleActions: 'play none none reverse'
+  // Social links animation - immediate visibility with stagger
+  gsap.fromTo('.social-links a', 
+    {
+      opacity: 0,
+      y: 20,
+      scale: 0.9
+    },
+    {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      duration: 0.6,
+      delay: 0.8,
+      stagger: 0.15,
+      ease: 'back.out(1.7)'
     }
-  });
+  );
 
   // Resume sections animations
   const resumeSections = [
@@ -66,16 +74,22 @@ export const initializeAnimations = () => {
     });
   });
 
-  // Projects animation
-  gsap.from('.project-card', {
-    opacity: 0,
-    y: 30,
-    duration: 0.8,
-    stagger: 0.2,
-    scrollTrigger: {
-      trigger: '.projects-grid',
-      start: 'top 75%',
-      toggleActions: 'play none none reverse'
+  // Projects animation - ensure immediate visibility
+  gsap.fromTo('.project-card', 
+    {
+      opacity: 0,
+      y: 30
+    },
+    {
+      opacity: 1,
+      y: 0,
+      duration: 0.8,
+      stagger: 0.2,
+      scrollTrigger: {
+        trigger: '.projects-grid',
+        start: 'top 75%',
+        toggleActions: 'play none none reverse'
+      }
     }
-  });
+  );
 };
