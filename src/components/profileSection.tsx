@@ -41,7 +41,7 @@ const ProfileSection: React.FC = () => {
               </a>
               
               <a 
-                href="/Sina Resume Tech 4.2.25.pdf" 
+                href="/Sina_Resume_t_8.8.25.pdf" 
                 download 
                 className="flex items-center gap-3 text-[var(--secondary)] hover:text-[var(--accent)] transition-colors duration-200 group"
               >

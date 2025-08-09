@@ -6,19 +6,49 @@ const TechnicalSkills: React.FC = () => {
       "AWS CDK", "Lambda", "DynamoDB", "Aurora PostgreSQL", "API Gateway", "Step Functions", "EventBridge", "CloudWatch", "S3", "KMS", "VPC", "WAF", "IAM", "Serverless Architecture", "IaC"
     ],
     "AI & Machine Learning": [
-      "Amazon Bedrock (NLP)", "Ollama (Local LLM)", "AI-powered PDF/data extraction", "Local AI Model Hosting", "Event-driven architectures", "Intelligent document parsing"
+      "Amazon Bedrock (NLP)", 
+      "Ollama (Local LLM)", 
+      "AI-powered PDF/data extraction", 
+      "Local AI Model Hosting", 
+      "Event-driven architectures", 
+      "Intelligent document parsing"
     ],
     "Programming Languages": [
-      "Python", "JavaScript", "SQL", "R", "MATLAB", "HTML5", "CSS3"
+      "Python", 
+      "JavaScript", 
+      "SQL", 
+      "R", 
+      "MATLAB", 
+      "HTML5", 
+      "CSS3"
     ],
     "Databases": [
-      "Relational Database Design", "DynamoDB", "Aurora PostgreSQL", "PostgreSQL", "Query Optimization"
+      "Relational Database Design", 
+      "DynamoDB",
+      "Aurora PostgreSQL", 
+      "PostgreSQL", 
+      "Query Optimization"
     ],
     "Frameworks & Tools": [
-      "React", "React Native", "Next.js", "Vite.js", "D3.js", "Bootstrap", "Git", "GitHub", "CI/CD Pipelines", "Tableau", "GraphPad", "ImageJ"
+      "React", 
+      "React Native", 
+      "Next.js", 
+      "Vite.js", 
+      "D3.js", 
+      "Bootstrap", 
+      "Git", 
+      "GitHub", 
+      "CI/CD Pipelines", 
+      "Tableau", 
+      "GraphPad", 
+      "ImageJ"
     ],
     "Security & Compliance": [
-      "HIPAA Compliance", "End-to-End Encryption", "IAM Role Design", "Audit Logging"
+      "HIPAA Compliance", 
+      "End-to-End Encryption", 
+      "IAM Role Design", 
+      "Audit Logging",
+      "Data Privacy"
     ],
     "Certifications": [
       "Responsive Web Design",
