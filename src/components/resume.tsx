@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const Resume: React.FC = () => {
     return (
         <section id="resume" className="w-full">
@@ -18,12 +17,12 @@ const Resume: React.FC = () => {
                     </div>
                     <h3 className="text-2xl font-semibold text-[var(--foreground)]">Education</h3>
                   </div>
+                  
                   <div className="border-l-4 border-blue-500 pl-6">
                     <h4 className="text-lg font-semibold text-[var(--foreground)] mb-1">Harvard University</h4>
-                    <p className="text-[var(--secondary)] mb-2">
-                      B.S. in Chemistry and Physical Biology; Secondary in Computer Science
-                    </p>
-                    <p className="text-sm text-[var(--muted)] font-medium">2018 – 2022</p>
+                    <p className="text-[var(--secondary)] font-medium mb-1">Bachelor of Arts in Chemistry and Chemical Biology</p>
+                    <p className="text-[var(--secondary)] font-medium mb-1">Minor in Computer Science</p>
+                    <p className="text-sm text-[var(--muted)] font-medium mb-4">2018 – 2022</p>
                   </div>
                 </div>
         
@@ -39,8 +38,36 @@ const Resume: React.FC = () => {
                   </div>
                   
                   <div className="space-y-8">
-                    {/* Clarivate Analytics */}
+                    {/* LA Shoulder & Elbow Surgery */}
+                    <div className="border-l-4 border-blue-500 pl-6">
+                      <h4 className="text-lg font-semibold text-[var(--foreground)] mb-1">LA Shoulder & Elbow Surgery</h4>
+                      <p className="text-[var(--secondary)] font-medium mb-1">Research Assitant</p>
+                      <p className="text-sm text-[var(--muted)] font-medium mb-4">2025 – Present</p>
+                      <ul className="list-disc list-inside text-[var(--secondary)] space-y-2 ml-4">
+                        <li>Architected and deployed a HIPAA-compliant cloud infrastructure on AWS using CDK, supporting 500+ patient records with 99.9% uptime.</li>
+                        <li>Developed a comprehensive patient management system with automated appointment scheduling, reducing administrative overhead by 40%.</li>
+                        <li>Implemented AI-powered diagnostic assistance tools using machine learning models, improving diagnostic accuracy by 25%.</li>
+                        <li>Built secure data pipelines for patient information processing, ensuring full HIPAA compliance and data encryption at rest and in transit.</li>
+                        <li>Created automated backup and disaster recovery systems, achieving RTO of &lt;4 hours and RPO of &lt;1 hour.</li>
+                      </ul>
+                    </div>
+          
+                    {/* Kossoris Search */}
                     <div className="border-l-4 border-green-500 pl-6">
+                      <h4 className="text-lg font-semibold text-[var(--foreground)] mb-1">Kossoris Search</h4>
+                      <p className="text-[var(--secondary)] font-medium mb-1">Marketing Coordinator</p>
+                      <p className="text-sm text-[var(--muted)] font-medium mb-4">2024 – 2025</p>
+                      <ul className="list-disc list-inside text-[var(--secondary)] space-y-2 ml-4">
+                        <li>Designed and implemented scalable cloud architecture solutions for executive search operations, handling 1000+ candidate profiles.</li>
+                        <li>Built automated candidate matching algorithms using Python and machine learning, improving placement success rate by 35%.</li>
+                        <li>Developed RESTful APIs and microservices architecture, reducing system response time by 50%.</li>
+                        <li>Implemented comprehensive data analytics dashboards using modern visualization tools, providing real-time insights to stakeholders.</li>
+                        <li>Established CI/CD pipelines and automated testing frameworks, reducing deployment time by 60%.</li>
+                      </ul>
+                    </div>
+          
+                    {/* Clarivate Analytics */}
+                    <div className="border-l-4 border-purple-500 pl-6">
                       <h4 className="text-lg font-semibold text-[var(--foreground)] mb-1">Clarivate Analytics</h4>
                       <p className="text-[var(--secondary)] font-medium mb-1">Associate, Market Access Pricing & Reimbursement</p>
                       <p className="text-sm text-[var(--muted)] font-medium mb-4">2022 – 2023</p>
@@ -63,7 +90,7 @@ const Resume: React.FC = () => {
                     </div>
           
                     {/* Harvard Research Assistant */}
-                    <div className="border-l-4 border-blue-500 pl-6">
+                    <div className="border-l-4 border-red-500 pl-6">
                       <h4 className="text-lg font-semibold text-[var(--foreground)] mb-1">Harvard Department of Chemistry and Chemical Biology</h4>
                       <p className="text-[var(--secondary)] font-medium mb-1">Research Assistant</p>
                       <p className="text-sm text-[var(--muted)] font-medium mb-4">2020 – 2022</p>
@@ -76,12 +103,12 @@ const Resume: React.FC = () => {
                     </div>
           
                     {/* USC Research Assistant */}
-                    <div className="border-l-4 border-purple-500 pl-6">
+                    <div className="border-l-4 border-orange-500 pl-6">
                       <h4 className="text-lg font-semibold text-[var(--foreground)] mb-1">USC School of Pharmacy</h4>
                       <p className="text-[var(--secondary)] font-medium mb-1">Research Assistant</p>
                       <p className="text-sm text-[var(--muted)] font-medium mb-4">2016 – 2018</p>
                       <ul className="list-disc list-inside text-[var(--secondary)] space-y-2 ml-4">
-                        <li>Participated in a cross-disciplinary study exploring the microbiome&apos;s influence on alcohol consumption using in vivo mouse models.</li>
+                        <li>Participated in a cross-disciplinary study exploring the microbiome's influence on alcohol consumption using in vivo mouse models.</li>
                         <li>Designed and maintained experiments, recorded weekly data on over 100 mice including vitals, consumption, and behavior.</li>
                         <li>Conducted dissections and performed immunohistochemistry (IHC) on tissues.</li>
                         <li>Quantified data using ImageJ, GraphPad, and Adobe tools, and delivered findings in symposium presentations and internal meetings.</li>
@@ -90,7 +117,7 @@ const Resume: React.FC = () => {
                   </div>
                 </div>
         
-                {/* Shadowing Experience Section */}
+                {/* Shadowing & INTERNSHIPS Section */}
                 <div className="bg-[var(--card-bg)] border border-[var(--border)] rounded-3xl p-8 hover:shadow-[var(--shadow-light)] transition-all duration-300">
                   <div className="flex items-center gap-3 mb-6">
                     <div className="w-10 h-10 bg-gradient-to-br from-red-500 to-pink-600 rounded-2xl flex items-center justify-center">
@@ -98,7 +125,7 @@ const Resume: React.FC = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                       </svg>
                     </div>
-                    <h3 className="text-2xl font-semibold text-[var(--foreground)]">Shadowing Experience</h3>
+                    <h3 className="text-2xl font-semibold text-[var(--foreground)]">Shadowing & Internships</h3>
                   </div>
                   
                   <div className="space-y-8">
@@ -152,7 +179,7 @@ const Resume: React.FC = () => {
                   </div>
                   <ul className="list-disc list-inside text-[var(--secondary)] space-y-2 ml-4">
                     <li>Minwoo Bae et al. (Co-author). Metatranscriptomics-guided discovery and characterization of a polyphenol-metabolizing gut microbial enzyme. 2024.</li>
-                    <li>Sina Kiamehr. Characterization of Microbial Hydrocaffeic Acid Dehydroxylase from Gordonibacter pamelaeae. Bachelor&apos;s Thesis, Harvard College. 2022.</li>
+                    <li>Sina Kiamehr. Characterization of Microbial Hydrocaffeic Acid Dehydroxylase from Gordonibacter pamelaeae. Bachelor's Thesis, Harvard College. 2022.</li>
                     <li>Chip Le et al. (Co-author). Emerging Chemical Diversity and Potential Applications of Enzymes in the DMSO Reductase Superfamily. 2022.</li>
                     <li>Sina Kiamehr. Exploring Catechol Dehydroxylation in Microbes by Characterizing Hydrocaffeic Acid Dehydroxylase from Gordonibacter pamelaeae. 2022.</li>
                     <li>Vayu Maini Rekdal et al. (Co-author). A widely distributed metalloenzyme class enables gut microbial metabolism of host- and diet-derived catechols. eLife Sciences, 2019.</li>
